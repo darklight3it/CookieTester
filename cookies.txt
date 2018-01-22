@@ -1,0 +1,8 @@
+cookieExample1=cookievalue1;
+cookieExample2=cookievalue2;
+cookieExample3=cookievalue3;
+cookieExample4=cookievalue4;
+cookieExample5=cookievalue5;
+cookieExample6=cookievalue6;
+cookieExample7=cookievalue7;
+cookieExample8=cookievalue8;

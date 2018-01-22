@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{{ title }}}</title>
+  </head>
+  <body>
+    {{{ body }}}
+    <button id="button">Send AJAX Request</button>
+    <script type="text/javascript">
+      button.addEventListener("click", () => {
+        var request = new XMLHttpRequest();
+        request.open('GET', '/ajaxcheck', true);
+        request.onload = function() {
+          if (request.status >= 200 && request.status < 400) {
+            alert("OK");
+          } else {
+            alert("BOOM");
+          }
+        };
+        request.onerror = function() {
+          alert("KABOOM");
+        };
+        request.send();
+      });
+    </script>
+  </body>
+</html>
